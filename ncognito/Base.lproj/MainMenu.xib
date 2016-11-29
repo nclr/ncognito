@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,8 +14,9 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ncognito" customModuleProvider="target">
             <connections>
+                <outlet property="infoLabel" destination="suY-Cy-BFy" id="IcJ-jJ-sB7"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -677,16 +681,77 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="104" y="68"/>
         </menu>
-        <window title="ncognito" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="contentRect" x="505" y="479" width="422" height="249"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="422" height="249"/>
+            <value key="maxSize" type="size" width="422" height="249"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <rect key="frame" x="0.0" y="0.0" width="422" height="249"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NEf-Bg-ktP">
+                        <rect key="frame" x="303" y="13" width="93" height="32"/>
+                        <buttonCell key="cell" type="push" title="Uninstall" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EGu-Ty-dqv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="purge:" target="Voe-Tx-rLC" id="Emx-AV-bh4"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lp4-84-Wxh">
+                        <rect key="frame" x="26" y="13" width="93" height="32"/>
+                        <buttonCell key="cell" type="push" title="Install" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="p9H-01-nju">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="install:" target="Voe-Tx-rLC" id="yJr-mg-0Sh"/>
+                        </connections>
+                    </button>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pll-hk-bwi">
+                        <rect key="frame" x="105" y="45" width="212" height="198"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pll-hk-bwi" secondAttribute="height" multiplier="106:99" id="Dxl-Iy-28N"/>
+                            <constraint firstAttribute="height" constant="198" id="KgG-64-ykG"/>
+                            <constraint firstAttribute="width" constant="212" id="RF0-2t-AtJ"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="theIcon" id="cxW-RQ-l9J"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suY-Cy-BFy">
+                        <rect key="frame" x="119" y="22" width="184" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="Installed successfully!" placeholderString="" id="Boj-Ng-uGG">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pll-hk-bwi" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="105" id="107-Gn-0g3"/>
+                    <constraint firstAttribute="bottom" secondItem="lp4-84-Wxh" secondAttribute="bottom" constant="20" id="9Lh-9L-rZT"/>
+                    <constraint firstAttribute="bottom" secondItem="suY-Cy-BFy" secondAttribute="bottom" constant="22" id="DN6-hq-Jdh"/>
+                    <constraint firstAttribute="trailing" secondItem="NEf-Bg-ktP" secondAttribute="trailing" constant="32" id="Pdh-Ak-0oO"/>
+                    <constraint firstItem="suY-Cy-BFy" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="Rax-hH-KEW"/>
+                    <constraint firstAttribute="bottom" secondItem="NEf-Bg-ktP" secondAttribute="bottom" constant="20" id="Yto-zX-5uW"/>
+                    <constraint firstItem="lp4-84-Wxh" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="32" id="emf-EN-Nic"/>
+                </constraints>
             </view>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                    <color key="value" red="0.26372611337130264" green="0.17782696653187424" blue="0.31751943005181349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="titlebarAppearsTransparent" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="180" y="372.5"/>
         </window>
     </objects>
+    <resources>
+        <image name="theIcon" width="1026" height="1022"/>
+    </resources>
 </document>

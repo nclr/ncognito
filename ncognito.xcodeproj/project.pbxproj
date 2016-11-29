@@ -10,7 +10,47 @@
 		EB0AB6B51DBAB03F005BEB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AB6B41DBAB03F005BEB3F /* AppDelegate.swift */; };
 		EB0AB6B71DBAB03F005BEB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB0AB6B61DBAB03F005BEB3F /* Assets.xcassets */; };
 		EB0AB6BA1DBAB03F005BEB3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0AB6B81DBAB03F005BEB3F /* MainMenu.xib */; };
+		EB0AB6C81DBAB060005BEB3F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AB6C71DBAB060005BEB3F /* main.swift */; };
+		EB0AB6CD1DBAB07D005BEB3F /* Helper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB0AB6CC1DBAB07D005BEB3F /* Helper-Info.plist */; };
+		EB0AB6D01DBAB5A8005BEB3F /* com.giorgosmoustakas.ncognitoHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB0AB6C51DBAB060005BEB3F /* com.giorgosmoustakas.ncognitoHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EB0B3D1E1DCA6229000F5B67 /* hosts.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB0B3D1D1DCA6229000F5B67 /* hosts.txt */; };
+		EB406D211DBEA45000EC4566 /* oui.txt in Sources */ = {isa = PBXBuildFile; fileRef = EBF205B11DBAC6750061D7B0 /* oui.txt */; };
+		EB406D221DBEA47900EC4566 /* oui.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBF205B11DBAC6750061D7B0 /* oui.txt */; };
+		EB406D231DBEA76D00EC4566 /* oui.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBF205B11DBAC6750061D7B0 /* oui.txt */; };
+		EB406D251DBEC6DB00EC4566 /* Uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = EB406D241DBEC6DB00EC4566 /* Uninstall.sh */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB0AB6C31DBAB060005BEB3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				EB406D221DBEA47900EC4566 /* oui.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EB0AB6CE1DBAB0B0005BEB3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				EB0AB6D01DBAB5A8005BEB3F /* com.giorgosmoustakas.ncognitoHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB406D1E1DBE99E100EC4566 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Library/Application Support/com.giorgosmoustakas.ncognitoHelper";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EB0AB6B11DBAB03F005BEB3F /* ncognito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ncognito.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,10 +58,24 @@
 		EB0AB6B61DBAB03F005BEB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB0AB6B91DBAB03F005BEB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EB0AB6BB1DBAB03F005BEB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0AB6C51DBAB060005BEB3F /* com.giorgosmoustakas.ncognitoHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.giorgosmoustakas.ncognitoHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0AB6C71DBAB060005BEB3F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EB0AB6CC1DBAB07D005BEB3F /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
+		EB0AB6D11DBAB8BA005BEB3F /* ncognitoHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ncognitoHelper-Launchd.plist"; sourceTree = "<group>"; };
+		EB0B3D1D1DCA6229000F5B67 /* hosts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hosts.txt; sourceTree = "<group>"; };
+		EB406D241DBEC6DB00EC4566 /* Uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
+		EBF205B11DBAC6750061D7B0 /* oui.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = oui.txt; path = ../../../../../../../../../Users/GIORGOSMOUS/Desktop/ncognito/ncognito/ncognito/oui.txt; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EB0AB6AE1DBAB03F005BEB3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0AB6C21DBAB060005BEB3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				EB0AB6B31DBAB03F005BEB3F /* ncognito */,
+				EB0AB6C61DBAB060005BEB3F /* ncognitoHelper */,
 				EB0AB6B21DBAB03F005BEB3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EB0AB6B11DBAB03F005BEB3F /* ncognito.app */,
+				EB0AB6C51DBAB060005BEB3F /* com.giorgosmoustakas.ncognitoHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +110,21 @@
 				EB0AB6B61DBAB03F005BEB3F /* Assets.xcassets */,
 				EB0AB6B81DBAB03F005BEB3F /* MainMenu.xib */,
 				EB0AB6BB1DBAB03F005BEB3F /* Info.plist */,
+				EBF205B11DBAC6750061D7B0 /* oui.txt */,
+				EB0B3D1D1DCA6229000F5B67 /* hosts.txt */,
+				EB406D241DBEC6DB00EC4566 /* Uninstall.sh */,
 			);
 			path = ncognito;
+			sourceTree = "<group>";
+		};
+		EB0AB6C61DBAB060005BEB3F /* ncognitoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EB0AB6CC1DBAB07D005BEB3F /* Helper-Info.plist */,
+				EB0AB6D11DBAB8BA005BEB3F /* ncognitoHelper-Launchd.plist */,
+				EB0AB6C71DBAB060005BEB3F /* main.swift */,
+			);
+			path = ncognitoHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +137,8 @@
 				EB0AB6AD1DBAB03F005BEB3F /* Sources */,
 				EB0AB6AE1DBAB03F005BEB3F /* Frameworks */,
 				EB0AB6AF1DBAB03F005BEB3F /* Resources */,
+				EB0AB6CE1DBAB0B0005BEB3F /* CopyFiles */,
+				EB406D1E1DBE99E100EC4566 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -77,6 +148,23 @@
 			productName = ncognito;
 			productReference = EB0AB6B11DBAB03F005BEB3F /* ncognito.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EB0AB6C41DBAB060005BEB3F /* ncognitoHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0AB6C91DBAB060005BEB3F /* Build configuration list for PBXNativeTarget "ncognitoHelper" */;
+			buildPhases = (
+				EB0AB6C11DBAB060005BEB3F /* Sources */,
+				EB0AB6C21DBAB060005BEB3F /* Frameworks */,
+				EB0AB6C31DBAB060005BEB3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ncognitoHelper;
+			productName = ncognitoHelper;
+			productReference = EB0AB6C51DBAB060005BEB3F /* com.giorgosmoustakas.ncognitoHelper */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -89,6 +177,11 @@
 				ORGANIZATIONNAME = "Georgios Moustakas";
 				TargetAttributes = {
 					EB0AB6B01DBAB03F005BEB3F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4FS2UT28B3;
+						ProvisioningStyle = Automatic;
+					};
+					EB0AB6C41DBAB060005BEB3F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4FS2UT28B3;
 						ProvisioningStyle = Automatic;
@@ -109,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				EB0AB6B01DBAB03F005BEB3F /* ncognito */,
+				EB0AB6C41DBAB060005BEB3F /* ncognitoHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -118,8 +212,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0B3D1E1DCA6229000F5B67 /* hosts.txt in Resources */,
+				EB406D251DBEC6DB00EC4566 /* Uninstall.sh in Resources */,
 				EB0AB6B71DBAB03F005BEB3F /* Assets.xcassets in Resources */,
 				EB0AB6BA1DBAB03F005BEB3F /* MainMenu.xib in Resources */,
+				EB406D231DBEA76D00EC4566 /* oui.txt in Resources */,
+				EB0AB6CD1DBAB07D005BEB3F /* Helper-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0AB6B51DBAB03F005BEB3F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0AB6C11DBAB060005BEB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB406D211DBEA45000EC4566 /* oui.txt in Sources */,
+				EB0AB6C81DBAB060005BEB3F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,9 +276,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4FS2UT28B3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -218,9 +326,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4FS2UT28B3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -242,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4FS2UT28B3;
 				INFOPLIST_FILE = ncognito/Info.plist;
@@ -256,12 +366,59 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4FS2UT28B3;
 				INFOPLIST_FILE = ncognito/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.giorgosmoustakas.ncognito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EB0AB6CA1DBAB060005BEB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 4FS2UT28B3;
+				INFOPLIST_FILE = "$(SRCROOT)/ncognitoHelper/Helper-Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"ncognitoHelper/Helper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"ncognitoHelper/ncognitoHelper-Launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_MODULE_NAME = com.giorgosmoustakas.ncognitoHelper;
+				PRODUCT_NAME = com.giorgosmoustakas.ncognitoHelper;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB0AB6CB1DBAB060005BEB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 4FS2UT28B3;
+				INFOPLIST_FILE = "$(SRCROOT)/ncognitoHelper/Helper-Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"ncognitoHelper/Helper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"ncognitoHelper/ncognitoHelper-Launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_MODULE_NAME = com.giorgosmoustakas.ncognitoHelper;
+				PRODUCT_NAME = com.giorgosmoustakas.ncognitoHelper;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -285,6 +442,16 @@
 				EB0AB6C01DBAB03F005BEB3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0AB6C91DBAB060005BEB3F /* Build configuration list for PBXNativeTarget "ncognitoHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0AB6CA1DBAB060005BEB3F /* Debug */,
+				EB0AB6CB1DBAB060005BEB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RootDirectory</key>
+	<string>/Library/</string>
+	<key>StandardErrorPath</key>
+	<string>/var/log/ncgnito.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/ncgnito.log</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>Label</key>
+	<string>com.giorgosmoustakas.ncognitoHelper</string>
+	<key>EnableGlobbing</key>
+	<true/>
+</dict>
+</plist>

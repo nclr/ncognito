@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ncognitoHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>EB0AB6B01DBAB03F005BEB3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB0AB6C41DBAB060005BEB3F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
